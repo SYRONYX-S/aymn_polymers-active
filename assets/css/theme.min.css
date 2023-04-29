@@ -863,7 +863,7 @@ body {
       {
         opacity: 1;
         transform: rotate(45deg) translate(-3px, -1px);
-        background: #36383F;
+        background: #ffffff;
       }
       #menuToggle input:checked ~ span:nth-last-child(3)
       {
