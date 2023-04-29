@@ -1,15 +1,34 @@
-const navbar = document.querySelector('.et-hero-tabs-container');
-const logo = document.querySelector('.et-hero-tabs img');
+// get references to the top and bottom nav elements
+const topNav = document.querySelector('#nav2');
+const bottomNav = document.querySelector('#nav1');
 
+// get the top position of the bottom nav element
+const bottomNavTop = bottomNav.offsetTop;
+
+// listen for the scroll event
 window.addEventListener('scroll', () => {
-  if (window.scrollY > navbar.offsetTop) {
-    navbar.classList.add('et-hero-tabs-container--top');
-    logo.classList.add('et-hero-tabs--logo-scroll');
+  // get the current scroll position
+  const scrollPos = window.scrollY || window.pageYOffset;
+
+  // check if the scroll position is greater than or equal to the top position of the bottom nav
+  if (scrollPos >= bottomNavTop) {
+    // hide the bottom nav and show the top nav
+    // bottomNav.style.display = 'none';
+    topNav.style.display = 'flex';
+    topNav.style.opacity = 1;
+    bottomNav.style.opacity = 0;
+    topNav.style.pointerEvents = 'auto';
   } else {
-    navbar.classList.remove('et-hero-tabs-container--top');
-    logo.classList.remove('et-hero-tabs--logo-scroll');
+    // show the bottom nav and hide the top nav
+    // bottomNav.style.display = 'flex';
+    // topNav.style.display = 'none';
+    topNav.style.opacity = 0;
+    bottomNav.style.opacity = 1;
+    topNav.style.pointerEvents = 'none';
   }
 });
+
+
 
 
 
@@ -453,7 +472,7 @@ window.addEventListener('scroll', () => {
     parallaxAmount: -0.2,
     animateSections: true
   })
-  const heroTabs = document.querySelector('.et-hero-tabs');
+const heroTabs = document.querySelector('.et-hero-tabs');
 const heroTabsOffsetTop = heroTabs.offsetTop;
 const heroTabsOffsetHeight = heroTabs.offsetHeight;
 const windowHeight = window.innerHeight;
