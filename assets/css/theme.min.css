@@ -902,7 +902,7 @@ body {
 .footer {
     background: #424242
 }
-@media (max-width: 396px) {
+@media (max-width: 450px) and (min-width: 359px) {
     .et-hero-tabs img {
         width: 100%;
     }
@@ -928,7 +928,7 @@ body {
         width: 80%;
     }
     .mobile-nav-img {
-        width: 90px;
+        width: 100px;
         position: absolute; /* Take the image out of the document flow */
         top: 50%; /* Position the top edge of the image at 50% of the container's height */
         left: 83%; /* Position the left edge of the image at 50% of the container's width */
