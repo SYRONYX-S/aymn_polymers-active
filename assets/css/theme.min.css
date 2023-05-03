@@ -1092,7 +1092,10 @@ body {
 }
 
 .footer {
-    background: #424242
+    background: #424242;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 @media (max-width: 450px) and (min-width: 359px) {
     .et-hero-tabs img {
