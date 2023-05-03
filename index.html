@@ -15,6 +15,7 @@
     <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
     <meta name="theme-color" content="#ffffff">
     <!--    Stylesheets-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-14Z2S9Z1lBOOxvGrZBLbpo4P4oOwY4C1tF8ErJ0N48r9r/JaJ5UIbrI5bfNal+lQ/bLJfjqY+KN/umE8qwLyg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
     <link href="vendors/prism/prism.css" rel="stylesheet">
@@ -23,7 +24,7 @@
   </head>
 
   <body>
-    <nav role="navigation" class="mobile-nav-parent">
+    <!-- <nav role="navigation" class="mobile-nav-parent">
       <div class="mobile-nav">
         <img class="mobile-nav-img" src="assets/img/nav-logo.png" alt="">
         <div id="menuToggle">
@@ -41,7 +42,35 @@
         </ul>
       </div>
       </div>
-    </nav>
+    </nav> -->
+    <section class="mobile-nav-menu">
+      <header class="nav-top">
+        <img class="mobile-nav-img" src="assets/img/nav-logo.png" alt="">
+        <span class="hamburger material-icons" id="ham">
+          <i class="fas fa-bars"></i> <!-- replace "menu" with this icon code -->
+        </span>
+      </header>
+      
+      <nav class="nav-drill">
+        <ul class="nav-items nav-level-1">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Company</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
     <section class="et-hero-tabs m-auto" id="top">
       <div class="hero-img">
         <img src="assets/img/logo.svg" alt="">
@@ -58,7 +87,7 @@
     </nav>
     <nav class="inverted-nav">
       <ul class="et-hero-tabs-container-inverted" id="nav2">
-        <a class="nav-img m-auto" href="#top"><img src="assets/img/nav-logo.png" alt=""></a>
+        <a class="nav-img m-auto" href="#top"><img src="assets/img/1nav-logo.png" alt=""></a>
         <li class="et-hero-tab-inverted"><a href="#top">Home</a></li>
         <li class="et-hero-tab-inverted"><a href="#about">About Us</a></li>
         <li class="et-hero-tab-inverted"><a href="#products">Products</a></li>
