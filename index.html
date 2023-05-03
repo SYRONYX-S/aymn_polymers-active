@@ -31,29 +31,29 @@
           <i class="fas fa-bars"></i>
         </span>
       </header>
-      
       <nav class="nav-drill">
-        <ul class="nav-items nav-level-1">
+        <ul class="nav-items">
           <li class="nav-item">
-            <a class="nav-link" href="#top">Home</a>
+            <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About Us</a>
+            <a class="nav-link" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#products">Products</a>
+            <a class="nav-link" id="products-tab" data-toggle="tab" href="#products" role="tab" aria-controls="products" aria-selected="true">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#company">Company</a>
+            <a class="nav-link" id="company-tab" data-toggle="tab" href="#company" role="tab" aria-controls="company" aria-selected="true">Company</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact Us</a>
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="true">Contact Us</a>
           </li>
           <a href="https://syronyx.com" target="_blank" class="menu-credit-logo"><img src="assets/img/credit-logo.webp" alt=""></a>
         </ul>
       </nav>
+      
     </section>
-    <section class="et-hero-tabs m-auto" id="top">
+    <section class="et-hero-tabs m-auto" id="home" data-nav="home">
       <div class="hero-img">
         <img src="assets/img/logo.svg" alt="">
       </div>
@@ -61,7 +61,7 @@
       <h3>Expertise, Quality, and Efficiency in Every Product Line </h3>
     </section>
     <nav class="et-hero-tabs-container" id="nav1">
-      <a class="et-hero-tab" href="#top">Home</a>
+      <a class="et-hero-tab" href="#home">Home</a>
       <a class="et-hero-tab" href="#about">About Us</a>
       <a class="et-hero-tab" href="#products">Products</a>
       <a class="et-hero-tab" href="#company">Company</a>
@@ -69,8 +69,8 @@
     </nav>
     <nav class="inverted-nav">
       <ul class="et-hero-tabs-container-inverted" id="nav2">
-        <a class="nav-img m-auto" href="#top"><img src="assets/img/1nav-logo.png" alt=""></a>
-        <li class="et-hero-tab-inverted"><a href="#top">Home</a></li>
+        <a class="nav-img m-auto" href="#home"><img src="assets/img/1nav-logo.png" alt=""></a>
+        <li class="et-hero-tab-inverted"><a href="#home">Home</a></li>
         <li class="et-hero-tab-inverted"><a href="#about">About Us</a></li>
         <li class="et-hero-tab-inverted"><a href="#products">Products</a></li>
         <li class="et-hero-tab-inverted"><a href="#company">Company</a></li>
@@ -80,19 +80,19 @@
     
     
     <main class="main">
-      <section class="et-slide" id="about">
+      <section class="et-slide" id="about" data-nav="about">
         <h1>About</h1>
         <h3>short description of company</h3>
       </section>
-      <section class="et-slide" id="products">
+      <section class="et-slide" id="products" data-nav="products">
         <h1>Products</h1>
         <h3>product details</h3>
       </section>
-      <section class="et-slide" id="company">
+      <section class="et-slide" id="company" data-nav="company">
         <h1>Company</h1>
         <h3>company history/story</h3>
       </section>
-      <section class="et-slide" id="contact">
+      <section class="et-slide" id="contact" data-nav="contact">
         <h1>Contact</h1>
         <h3>contact details & email contact form</h3>
       </section>

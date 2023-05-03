@@ -1,4 +1,28 @@
 console.clear()
+window.addEventListener('scroll', () => {
+  const navLinks = document.querySelectorAll('.nav-link');
+  const navItems = document.querySelectorAll('.nav-item');
+
+  navLinks.forEach(link => {
+    const section = document.querySelector(link.hash);
+
+    if (section.offsetTop <= window.scrollY + 110 && section.offsetTop + section.offsetHeight > window.scrollY + 110) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+
+  navItems.forEach(item => {
+    const section = document.querySelector(item.querySelector('.nav-link').hash);
+
+    if (section.offsetTop <= window.scrollY + 110 && section.offsetTop + section.offsetHeight > window.scrollY + 110) {
+      item.classList.add('active');
+    } else {
+      item.classList.remove('active');
+    }
+  });
+});
 
 const navExpand = [].slice.call(document.querySelectorAll('.nav-expand'))
 const backLink = `<li class="nav-item">
@@ -511,3 +535,25 @@ function stickyHeroTabs() {
 }
 
 window.addEventListener('scroll', stickyHeroTabs);
+// function clickSingleA(a)
+// {
+//     items = document.querySelectorAll('.nav-link.active');
+
+//     if(items.length) 
+//     {
+//         items[0].className = 'nav-link';
+//     }
+
+//     a.className = 'nav-link active';
+// }
+// function clickSingleLi(li)
+// {
+//     items = document.querySelectorAll('.nav-item.active');
+
+//     if(items.length) 
+//     {
+//         items[0].className = 'nav-item';
+//     }
+
+//     li.className = 'nav-item active';
+// }
