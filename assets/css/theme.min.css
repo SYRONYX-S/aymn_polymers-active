@@ -568,24 +568,16 @@
     opacity: 1;
     visibility: visible;
   }
-  /* .active {
-    background:#dfe0e5;
-    overflow:hidden;
-    border-left:2px solid #00f;
-    padding:8px;
-    color: black;
-  } */
   .nav-drill {
     display: flex;
     position: fixed;
     z-index: 101;
     top: 0;
-    border-top: solid 5px #1c8c44;
-    border-left: solid 2px #1c8c44;
+    border-top: solid 6px #1c8c44;
+    border-left: solid 3px #1c8c44;
     border-top-left-radius: 1.7cm;
-    right: 0;
+    right: -1px;
     width: 250px;
-    /* height: 100vh; */
     padding-top: 1cm;
     background-color: #000000b3;
     overflow-y: auto;
@@ -715,7 +707,18 @@
   }
   .nav-link.active{
     background-color: #0aa5ffcc;
-    /* color: yellow; */
+  }
+
+  .desk-nav-link {
+    transition: .5s;
+    border-bottom: solid 2px rgba(0, 0, 0, 0);
+    /* border-radius: 3px; */
+  }
+  .desk-nav-link.active {
+    /* background-color: #0aa5ff3a; */
+    color: #005f91;
+    border-bottom: solid 2px #007ca5;
+    transition: .5s;
   }
 body {
     background-color: #fff;
@@ -823,12 +826,37 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
     text-align: center;
     /* padding: 0 2em */
 }
-
+.home-hero {
+    height: 100vh;
+}
+.about {
+    height: 80vh;
+}
+.products {
+    height: 80vh;
+}
+.company {
+    height: 80vh;
+}
+.contact {
+    height: 70vh;
+}
+.section-heading {
+    letter-spacing: .4rem !important;
+    font-family: "Exo 2";
+    font-weight: 1000 !important;
+    /* text-transform: uppercase; */
+}
+.section-description {
+    margin-bottom: 2cm;
+    font-family: "Exo 2";
+    letter-spacing: .03rem !important;
+}
 .et-hero-tabs h1,
 .et-slide h1 {
     font-size: 2rem;
@@ -892,7 +920,7 @@ body {
   right: 0;
   z-index: 9999;
   padding: 0 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.151);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.089);
 }
 .navbar-logo {
     background: #2571a9;
@@ -985,6 +1013,12 @@ body {
     .mobile-nav-menu {
         display: block;
     }
+    /* .nav-drill {
+        display: none;
+    }
+    .nav-drill.open {
+        display: block;
+    } */
     .mobile-nav-parent {
         display: block;
         position: relative;
@@ -3548,3 +3582,66 @@ code[class*=language-] {
 .logo-footer:hover {
     text-decoration: none
 }
+
+/* Glass Morphism */
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    max-width: 85%;
+  }
+  
+  .card .content {
+    flex: 1;
+    margin-left: 25px;
+  }
+  
+  .card p {
+    line-height: 2;
+    font-family: "Exo 2";
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: -0.1em;
+  }
+  
+  .card h3 {
+    font-size: 5;
+  }
+  
+  .card .image {
+    width: 40%;
+    height: 100%;
+    border-radius: 16px;
+    background-image: url('');
+    background-position: center;
+    background-size: cover;
+    /* margin-left: 20px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+    }
+    
+    .card .image {
+      width: 100%;
+      height: 300px;
+      margin: 20px 0;
+    }
+    
+    .card .content {
+      width: 100%;
+      font-family: "Exo 2";
+    }
+  }
+  

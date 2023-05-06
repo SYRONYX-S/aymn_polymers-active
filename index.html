@@ -16,7 +16,10 @@
     <meta name="theme-color" content="#ffffff">
     <!--    Stylesheets-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-14Z2S9Z1lBOOxvGrZBLbpo4P4oOwY4C1tF8ErJ0N48r9r/JaJ5UIbrI5bfNal+lQ/bLJfjqY+KN/umE8qwLyg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
     <link href="vendors/prism/prism.css" rel="stylesheet">
     <link href="assets/css/theme.min.css" rel="stylesheet" />
@@ -24,7 +27,7 @@
   </head>
 
   <body>
-    <section class="mobile-nav-menu">
+    <section class="mobile-nav-menu" id="mobile-nav-menu">
       <header class="nav-top">
         <a href="#home"><img class="mobile-nav-img" src="assets/img/nav-logo.png" alt=""></a>
         <span class="hamburger material-icons" id="ham">
@@ -53,7 +56,7 @@
       </nav>
       
     </section>
-    <section class="et-hero-tabs m-auto" id="home" data-nav="home">
+    <section class="et-hero-tabs home-hero m-auto" id="home" data-nav="home">
       <div class="hero-img">
         <img src="assets/img/logo.svg" alt="">
       </div>
@@ -72,29 +75,41 @@
         <a href="#"><img src="assets/img/nav-logo.png" alt="Logo"></a>
       </div>
       <ul class="nav-links-tp" id="nav2">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#company">Company</a></li>
-        <li><a href="#contact">Contact Us</a></li>
+        <li class="desk-nav-item"><a class="desk-nav-link" href="#home">Home</a></li>
+        <li class="desk-nav-item"><a class="desk-nav-link" href="#about">About Us</a></li>
+        <li class="desk-nav-item"><a class="desk-nav-link" href="#products">Products</a></li>
+        <li class="desk-nav-item"><a class="desk-nav-link" href="#company">Company</a></li>
+        <li class="desk-nav-item"><a class="desk-nav-link" href="#contact">Contact Us</a></li>
       </ul>
     </nav>
     
     
     <main class="main">
-      <section class="et-slide" id="about" data-nav="about">
-        <h1>About</h1>
-        <h3>short description of company</h3>
+      <section class="et-slide about" id="about" data-nav="about">
+        <h1 class="section-heading">About Us</h1>
+        <h3 class="section-description">What we're all about</h3>
+        <div class="card">
+          <div class="image"></div>
+          <div class="content">
+            <p>AYAMON INDIA POLYMERS, previously known as KOLAR POLYMERS, started manufacturing LDPE pipes for agricultural and irrigation purposes in 1995.  
+              In 2010, we invested in modern machinery and began producing high-quality HDPE pipes, followed by LDPE film and tubes for various purposes. 
+              We obtained the ISO certificate in 2019 and received the Best First 500 MSME Company Award in India in 2005. 
+              We now manufacture a range of pipes, including for agriculture/irrigation, drainage, gas distribution, water supply, and electrical protection.
+              We recently opened a new branch in Nilai Industrial Park, Malaysia, and plan to open another in the Middle East.  
+              AYAMON INDIA POLYMERS prides ourselves on producing quality products and having thousands of happy customers.</p>
+          </div>
+        </div>
+        
       </section>
-      <section class="et-slide" id="products" data-nav="products">
+      <section class="et-slide products" id="products" data-nav="products">
         <h1>Products</h1>
         <h3>product details</h3>
       </section>
-      <section class="et-slide" id="company" data-nav="company">
+      <section class="et-slide company" id="company" data-nav="company">
         <h1>Company</h1>
         <h3>company history/story</h3>
       </section>
-      <section class="et-slide" id="contact" data-nav="contact">
+      <section class="et-slide contact" id="contact" data-nav="contact">
         <h1>Contact</h1>
         <h3>contact details & email contact form</h3>
       </section>

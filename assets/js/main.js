@@ -1,4 +1,5 @@
 console.clear()
+
 window.addEventListener('scroll', () => {
   const navLinks = document.querySelectorAll('.nav-link');
   const navItems = document.querySelectorAll('.nav-item');
@@ -17,6 +18,30 @@ window.addEventListener('scroll', () => {
     const section = document.querySelector(item.querySelector('.nav-link').hash);
 
     if (section.offsetTop <= window.scrollY + 110 && section.offsetTop + section.offsetHeight > window.scrollY + 110) {
+      item.classList.add('active');
+    } else {
+      item.classList.remove('active');
+    }
+  });
+});
+window.addEventListener('scroll', () => {
+  const navLinks = document.querySelectorAll('.desk-nav-link');
+  const navItems = document.querySelectorAll('.desk-nav-item');
+
+  navLinks.forEach(link => {
+    const section = document.querySelector(link.hash);
+
+    if (section.offsetTop <= window.scrollY + 250 && section.offsetTop + section.offsetHeight > window.scrollY + 250) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+
+  navItems.forEach(item => {
+    const section = document.querySelector(item.querySelector('.desk-nav-link').hash);
+
+    if (section.offsetTop <= window.scrollY + 250 && section.offsetTop + section.offsetHeight > window.scrollY + 250) {
       item.classList.add('active');
     } else {
       item.classList.remove('active');
