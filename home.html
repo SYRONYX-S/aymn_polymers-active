@@ -24,6 +24,8 @@
     <link href="vendors/prism/prism.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet" />
     <link href="assets/css/user.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -106,15 +108,57 @@
       <section class="et-slide products" id="products" data-nav="products">
         <h1 class="section-heading">Products</h1>
         <h3 class="section-description">product details</h3>
+        <div>sample text
+        </div>
       </section>
       <section class="et-slide company" id="company" data-nav="company">
         <h1 class="section-heading">Company</h1>
         <h3 class="section-description">company history/story</h3>
+        <div class="card-container">
+          <div class="company-card">
+            <div class="card-header">
+              <h2>History</h2>
+            </div>
+            <div class="card-body">
+              <p class="company-content">KOLAR POLYMERS was started in 1995 at Anakkayam near Manjeri by Muhamadali Ayamon and his elder son Muhamad Yusuf Ayamon. The company initially manufactured LDPE pipes for agricultural and irrigation purposes. In 2000, a part of the company was shifted to Palaurkotta, an industrial estate near Perinthalmanna. Muhamadali Ayamon passed away in 2005, and in 2010, Shamsuddeen Ayamon took over full control of the company. The company was renamed AYAMON INDIA POLYMERS, and since then, it has undergone significant changes.</p>
+            </div>
+          </div>
+        
+          <div class="company-card">
+            <div class="card-header">
+              <h2>Mission</h2>
+            </div>
+            <div class="card-body">
+              <p class="company-content">The company strives to produce quality products and has a proud record of thousands of happy customers. They manufacture various types of pipes like agriculture/irrigation, drainage, gas distribution, water supply, and electrical protection. AYAMON INDIA POLYMERS has a commitment to quality and has implemented modern machinery and technology to manufacture HDPE pipes, LDPE films, and tubes. The company obtained an ISO certificate in 2019 and an ISI accreditation for quality from the central government following the opening of a quality control lab in 2022.</p>
+            </div>
+          </div>
+        
+          <div class="company-card">
+            <div class="card-header">
+              <h2>Vision</h2>
+            </div>
+            <div class="card-body">
+              <p class="company-content">AYAMON INDIA POLYMERS has expanded its reach with a new overseas branch in Nilai Industrial Park, Malaysia, named AYAMON MALAYSIA POLYMERS SDN BHD in 2023. The company plans to open a new branch in the Middle East. They continue to strive to produce quality products and maintain their commitment to customer satisfaction while expanding their reach globally.</p>
+            </div>
+          </div>
+        </div>
+        
       </section>
       <section class="et-slide contact" id="contact" data-nav="contact">
         <h1 class="section-heading">Contact</h1>
         <h3 class="section-description">contact details & email contact form</h3>
-
+        <div class="contact-form-frame">
+          <iframe src="assets/contact-form-flies/contact.html" title="." scrolling="no" width="100%" id="myIframe"></iframe>
+        
+        <script>
+          var iframe = document.getElementById("myIframe");
+          
+          // Adjusting the iframe height onload event
+          iframe.onload = function(){
+              iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+          }
+        </script>
+      </div> 
       </section>
       <section class="py-0 footer">
         <div class="container">
