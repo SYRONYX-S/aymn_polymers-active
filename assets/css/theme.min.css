@@ -835,7 +835,12 @@ body {
     height: 100vh;
 }
 .about {
-    height: 80vh;
+    height: auto;
+}
+@media (min-width:992px) {
+    .about {
+        top: 5cm;
+    }
 }
 .products {
     height: 80vh;
@@ -988,7 +993,7 @@ body {
     transition: all .5s ease
 }
 
-@media (min-width:800px) {
+@media (min-width:991px) {
 
     .et-hero-tabs h1,
     .et-slide h1 {
@@ -1044,6 +1049,77 @@ body {
     }
 }
 @media (max-width:991px) and (min-width: 700px) {
+    .mobile-nav-img {
+        width: 120px;
+        position: absolute;
+        top: 50%;
+        left: 77px;
+        transform: translate(-50%, -50%);
+        float: left;
+        /* filter: brightness(0.3); */
+        background: #2571a9;
+        border-radius: 5px;
+        padding: 4px;
+        /* justify-content: center; */
+    }
+    .menu-credit-logo img{
+        position: absolute;
+        margin: 0 auto;
+        display: block;
+        /* right: calc((0% + 47px) / 1); */
+        right: 20px;
+        /* bottom: calc((0% + 36px) / 1); */
+        bottom: 20px;
+        width: 40px;
+        filter: brightness(0.6);
+    }
+}
+@media (max-width:768px) {
+    
+    .et-hero-tabs img {
+        width: 100%;
+    }
+    .hero-img {
+        width: 100%;
+        margin-top: 4cm;
+        margin-bottom: 1cm;
+    }
+    .et-hero-tabs h1, .et-slide h1 {
+        letter-spacing: 0.1rem;
+        font-family: Raleway;
+        font-size: 2.3rem;
+        color: #000000b2;
+    }
+    .et-hero-tabs h3, .et-slide h3 {
+        letter-spacing: 0.1rem;
+        margin-top: .5cm;
+        opacity: 1;
+        color: rgba(0, 0, 0, 0.575);
+        font-size: 1rem;
+    }
+}
+@media (max-width:699px) and (min-width: 450px) {
+    .et-hero-tabs img {
+        width: 100%;
+    }
+    .hero-img {
+        width: 100%;
+        margin-top: 4cm;
+        margin-bottom: 1cm;
+    }
+    .et-hero-tabs h1, .et-slide h1 {
+        letter-spacing: 0.1rem;
+        font-family: Raleway;
+        font-size: 2.3rem;
+        color: #000000b2;
+    }
+    .et-hero-tabs h3, .et-slide h3 {
+        letter-spacing: 0.1rem;
+        margin-top: .5cm;
+        opacity: 1;
+        color: rgba(0, 0, 0, 0.575);
+        font-size: 1rem;
+    }
     .mobile-nav-img {
         width: 120px;
         position: absolute;
@@ -3619,13 +3695,23 @@ code[class*=language-] {
   
   .card .image {
     width: 40%;
-    height: 100%;
+    height: 300px;
     border-radius: 16px;
-    background-image: url('');
+    background-image: url(../img/logo.png);
     background-position: center;
     background-size: cover;
-    /* margin-left: 20px; */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  }
+  @media (max-width:900px) {
+    .card .image {
+        width: 100%;
+    }
+  }
+  .card image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
   }
   
   @media (max-width: 768px) {
@@ -3639,9 +3725,9 @@ code[class*=language-] {
       margin: 20px 0;
     }
     
-    .card .content {
+    /* .card .content {
       width: 100%;
       font-family: "Exo 2";
-    }
+    } */
   }
   
