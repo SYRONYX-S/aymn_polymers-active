@@ -41,6 +41,9 @@ a:hover {
 .contact-content {
   padding-top: 1cm;
   padding-bottom: 1cm;
+  max-width: 80%;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
 .heading {
@@ -255,4 +258,10 @@ label.error {
   font-weight: bold;
   font-size: 12px;
   color: #000;
+}
+@media (max-width: 450px) {
+  .contact-content {
+    max-width: 100%;
+  }
+  
 }

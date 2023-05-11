@@ -1544,7 +1544,7 @@ input {
 }
 
 .row {
-    --ensurance-gutter-x: 2rem;
+    --ensurance-gutter-x: 0;
     --ensurance-gutter-y: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1968,7 +1968,7 @@ input {
 
 ::-webkit-scrollbar {
     width: 10px;
-    background: #ffffff00
+    background: #000
 }
 
 ::-webkit-scrollbar-thumb {
@@ -3752,14 +3752,14 @@ code[class*=language-] {
     text-decoration: none
 }
 
-/* Glass Morphism */
+/* About */
 .card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background: rgba(255, 255, 255, 0.14);
-    border-radius: 16px;
+    border-radius: 20px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -3835,6 +3835,11 @@ code[class*=language-] {
     } */
   }
   
+/* Products */
+.products-frame{
+    width: 100%;
+}
+
 
   /* Contact Form */
 
@@ -3846,66 +3851,224 @@ iframe {
     border: none;
   }
   
+/*--------------------------------------------------------------
+# Map
+--------------------------------------------------------------*/
 
-/* Company */
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: consolas;
-  } */
-/* .card-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer-parent {
+    display: block;
+    position: relative;
+    margin-right: -8px;
+    margin-left: -8px;
+    margin-bottom: -8px;
+}
+.footer {
+    color: #fff;
+    font-family: "Exo 2" !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 14px;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    /* border: 1px solid rgba(255, 255, 255, 0); */
   }
-  
-  .company-card {
-    margin: 20px;
-    width: calc(33.33% - 40px);
-    height: auto;
-    border-radius: 10px;
-    margin-top: 5cm;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    overflow: hidden;
+  #footer .footer-newsletter {
+    padding: 50px 0;
+    background: #0d2735;
   }
-  
-  .company-card:hover {
-    transform: translateY(-10px);
+  #footer .footer-top .row {
+    justify-content:space-evenly;
   }
-  
-  .company-card-header {
-    padding: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    text-align: center;
-  }
-  
-  .company-card-header h2 {
-    margin: 0;
-    font-size: 1.5rem;
+  .footer-top-links {
+    color: #005f91;
     font-weight: 600;
-    color: #fff;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   }
-  
-  .company-card-body {
-    padding: 20px;
-    text-align: justify;
-    color: #fff;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  #footer .footer-top {
+    background: rgb(0 0 0 / 88%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-top: 3px solid #1c8c44;
+    /* border-bottom: 1px solid #123649; */
+    padding: 40px 0 0 0;
   }
-  .company-content{
-    line-height: 1.8;
+  #footer .footer-top .footer-info {
+    margin-bottom: 30px;
+  }
+  #footer .footer-top .footer-info h3 {
+    font-size: 18px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    color: #0094e3;
+    font-weight: 700;
+  }
+  .container-footer {
+    background: #061f30;
+    padding: 0 0 20px 0;
+  }
+  #footer .footer-top .footer-info p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    font-family: "Exo 2";
+    color: rgb(255 255 255 / 58%);
+    font-weight: 500;
+  }
+  #footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #1e4356;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  #footer .footer-top .social-links a:hover {
+    background: #68A4C4;
+    color: #fff;
+    text-decoration: none;
+  }
+  #footer .footer-top h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0094e3;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  #footer .footer-top .footer-links {
+    margin-bottom: 30px;
+  }
+  #footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  #footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #a2cce3;
+    font-size: 18px;
+    line-height: 1;
+  }
+  #footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  #footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  #footer .footer-top .footer-links ul a {
+    color: rgb(255 255 255 / 58%);
+    transition: 0.3s;
+    font-weight: 500;
+    font-family: "Exo 2";
+    display: inline-block;
+    line-height: 1;
+  }
+  #footer .footer-top .footer-links ul a:hover {
+    color: #a2cce3;
+  }
+  #footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+  }
+  #footer .footer-top .footer-contact p {
+    line-height: 26px;
+    color: rgb(255 255 255 / 58%);
     font-family: "Exo 2";
     font-weight: 500;
-    font-size: 16px;
-    margin-bottom: -0.1em;
+   
   }
-   */
+  #footer .copyright {
+    text-align: center;
+    padding-top: 20px;
+  }
+  #footer .credits {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+  }
+  #footer .credits a {
+    color: #0094e3;
+    font-weight: 700;
+    
+  }
 
+/* second contact-map section */
+
+
+.contact-map-header {
+    color: #444;
+    text-transform: uppercase;
+    position: relative;
+    font-family: "exo 2";
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: .1rem;
+}
+.contact-map-header::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    font-family: "Exo 2";
+    height: 2px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+.contact-map-header::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    font-family: "Exo 2";
+    height: 3.5px;
+    background: #0093e3;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+.contact-2-card-body {
+    border: solid 1px #BCBCBC;
+    margin: 0 auto;
+    padding: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 20px;
+    padding-top: 33px;
+    text-align: left;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.contact-2-card-body .map-contact-link {
+    color: #444 !important;
+    font-size: 16px;
+}
+.contact-2-card-body .map-icons {
+    color: #007ca5;
+    font-size: 16px;
+}
+/* end of map section */
+
+/* Company */
+
+
+
+/*  */
 /* media screen settings */
 
 
@@ -3924,22 +4087,50 @@ iframe {
     .et-hero-tab {
         font-size: 1rem
     }
+    .contact-2-container {
+        /* flex-wrap: wrap; */
+        margin: 0 auto;
+        /* justify-content: center; */
+        /* align-items: center; */
+        max-width: 80% !important;
+        font-family: "Exo 2";
+        margin-bottom: 2cm;
+    }
+    .contact-2-card{
+        background: rgba(255, 255, 255, 0.14);
+        border-radius: 20px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+    .contact-2-card .iframe-map {
+        width: 60% !important;
+    }
+    .contact-2-card iframe {
+        width: 100% !important;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        margin-bottom: -5px;
+    }
+    .contact-2-card .map-contact {
+        max-width: 39% !important;
+        margin-top: 1cm;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
 }
 
 .mobile-nav-parent {
     display: none
 }
-
+.contact-2-container {
+    max-width: 80%;
+    width: 100% !important;
+}
 @media (max-width:991px) {
     .mobile-nav-menu {
         display: block;
     }
-    /* .nav-drill {
-        display: none;
-    }
-    .nav-drill.open {
-        display: block;
-    } */
     .mobile-nav-parent {
         display: block;
         position: relative;
@@ -3963,14 +4154,59 @@ iframe {
     #nav2 {
         display: none !important
     }
-    /* .company-card {
-        width: 100% !important;
-        margin: 0px 0px 20px 0px ;
-        padding: 10px ;
+    .contact-2-container {
+        margin: 0 auto;
+        max-width: 80%;
+        font-family: "Exo 2";
+        margin-bottom: 2cm;
     }
-    .company-card:last-child {
-        margin: 0px 0px 140px 0px;
-    } */
+    .contact-2-card{
+        background: rgba(255, 255, 255, 0.14);
+        border-radius: 20px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+    .contact-2-card .iframe-map {
+        width: 100%;
+    }
+    .contact-2-card iframe {
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-bottom: -5px;
+    }
+    .contact-2-card .map-contact {
+        width: 100% ;
+        margin-top: 1cm;
+        /* background: red; */
+        padding-bottom: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .contact-map-header {
+        color: #444;
+        text-transform: uppercase;
+        position: relative;
+        font-family: "exo 2";
+        padding-bottom: 10px;
+        text-align: center;
+        font-size: 2rem;
+        letter-spacing: .1rem;
+    }
+    .contact-2-card-body {
+        border: solid 1px #bcbcbc42;
+        margin: 0 auto;
+        padding: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background: rgba(255, 255, 255, 0.14);
+        border-radius: 20px;
+        padding-top: 33px;
+        text-align: left;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
 }
 @media (max-width:991px) and (min-width: 700px) {
     .mobile-nav-img {
@@ -4094,193 +4330,9 @@ iframe {
 }
 
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-.footer-parent {
-    display: block;
-    position: relative;
-    margin-right: -8px;
-    margin-left: -8px;
-    margin-bottom: -8px;
-}
-.footer {
-    color: #fff;
-    font-family: "Exo 2" !important;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    font-size: 14px;
-    /* background: black; */
-  }
-  #footer .footer-newsletter {
-    padding: 50px 0;
-    background: #0d2735;
-  }
-  /* .footer-top a {
-    color: rgb(74, 74, 74);
-  } */
-  #footer .footer-newsletter h4 {
-    font-size: 24px;
-    margin: 0 0 20px 0;
-    padding: 0;
-    line-height: 1;
-    font-weight: 600;
-    color: #a2cce3;
-  }
-  #footer .footer-newsletter form {
-    margin-top: 30px;
-    background: #fff;
-    padding: 6px 10px;
-    position: relative;
-    border-radius: 50px;
-  }
-  #footer .footer-newsletter form input[type=email] {
-    border: 0;
-    padding: 4px;
-    width: calc(100% - 100px);
-  }
-  #footer .footer-newsletter form input[type=submit] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    border: 0;
-    background: none;
-    font-size: 16px;
-    padding: 0 20px;
-    margin: 3px;
-    background: #68A4C4;
-    color: #fff;
-    transition: 0.3s;
-    border-radius: 50px;
-  }
-  #footer .footer-newsletter form input[type=submit]:hover {
-    background: #468db3;
-  }
-  #footer .footer-top .row {
-    justify-content:space-evenly;
-  }
-  #footer .footer-top {
-    background: rgba(255, 255, 255, 0.14);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border-top: 6px solid #0094e3;
-    border-bottom: 1px solid #123649;
-    padding: 40px 0 0 0;
-  }
-  #footer .footer-top .footer-info {
-    margin-bottom: 30px;
-  }
-  #footer .footer-top .footer-info h3 {
-    font-size: 18px;
-    margin: 0 0 20px 0;
-    padding: 2px 0 2px 0;
-    line-height: 1;
-    color: #0094e3;
-    font-weight: 700;
-  }
-  .container-footer {
-    background: black;
-    padding: 0 0 20px 0;
-  }
-  #footer .footer-top .footer-info p {
-    font-size: 14px;
-    line-height: 24px;
-    margin-bottom: 10px;
-    font-family: "Exo 2";
-    color: rgb(74, 74, 74);
-    font-weight: 600;
-  }
-  #footer .footer-top .social-links a {
-    font-size: 18px;
-    display: inline-block;
-    background: #1e4356;
-    color: #fff;
-    line-height: 1;
-    padding: 8px 0;
-    margin-right: 4px;
-    border-radius: 50%;
-    text-align: center;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
-  }
-  #footer .footer-top .social-links a:hover {
-    background: #68A4C4;
-    color: #fff;
-    text-decoration: none;
-  }
-  #footer .footer-top h4 {
-    font-size: 18px;
-    font-weight: 700;
-    color: #0094e3;
-    position: relative;
-    padding-bottom: 12px;
-  }
-  #footer .footer-top .footer-links {
-    margin-bottom: 30px;
-  }
-  #footer .footer-top .footer-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  #footer .footer-top .footer-links ul i {
-    padding-right: 2px;
-    color: #a2cce3;
-    font-size: 18px;
-    line-height: 1;
-  }
-  #footer .footer-top .footer-links ul li {
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-  }
-  #footer .footer-top .footer-links ul li:first-child {
-    padding-top: 0;
-  }
-  #footer .footer-top .footer-links ul a {
-    color: rgb(74, 74, 74);
-    transition: 0.3s;
-    font-weight: 600;
-    font-family: "Exo 2";
-    display: inline-block;
-    line-height: 1;
-  }
-  #footer .footer-top .footer-links ul a:hover {
-    color: #a2cce3;
-  }
-  #footer .footer-top .footer-contact {
-    margin-bottom: 30px;
-  }
-  #footer .footer-top .footer-contact p {
-    line-height: 26px;
-    color: rgb(74, 74, 74);
-    font-family: "Exo 2";
-    font-weight: 600;
-   
-  }
-  #footer .copyright {
-    text-align: center;
-    padding-top: 20px;
-  }
-  #footer .credits {
-    padding-top: 10px;
-    text-align: center;
-    font-size: 13px;
-    color: #fff;
-  }
-  #footer .credits a {
-    color: #0094e3;
-    font-weight: 700;
-    
-  }
 
 
-
-@media (max-width: 450px) and (min-width: 302px) {
+@media (max-width: 450px) {
     .et-hero-tabs img {
         width: 100%;
     }
@@ -4351,6 +4403,15 @@ iframe {
     .contact {
         margin-bottom: 1cm;
     }
+    .contact-2-container {
+        max-width: 100%;
+    }
+    /* #footer .footer-top {
+        margin-right: -7.5px;
+    }
+    .container-footer {
+        margin-right: -7.5px;
+    } */
 }
 @media (min-width:992px) {
     .about {
