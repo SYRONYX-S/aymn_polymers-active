@@ -1074,7 +1074,8 @@ body {
 }
 
 .products {
-    height: 100vh;
+    height: 100%;
+    margin-top: 5cm;
 }
 .company {
     height: 100%;
@@ -3828,32 +3829,19 @@ code[class*=language-] {
       height: 300px;
       margin-bottom: 20px;
     }
-    
-    /* .card .content {
-      width: 100%;
-      font-family: "Exo 2";
-    } */
   }
   
 /* Products */
 .products-frame{
     width: 100%;
 }
-
-
-  /* Contact Form */
-
-
+/* Contact Form */
 .contact-form-frame {
     width: 100%;
 }
 iframe {
     border: none;
   }
-  
-/*--------------------------------------------------------------
-# Map
---------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Footer
