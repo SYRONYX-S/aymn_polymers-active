@@ -3834,6 +3834,7 @@ code[class*=language-] {
 /* Products */
 .products-frame{
     width: 100%;
+    height: 100vh;
 }
 /* Contact Form */
 .contact-form-frame {

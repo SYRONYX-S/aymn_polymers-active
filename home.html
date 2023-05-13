@@ -112,15 +112,17 @@
           <h3 class="section-description">product details</h3>
         </div>
         <div class="products-frame">
-          <iframe src="assets/products-files/products.html" title="sy" scrolling="no" height="750vh" width="100%" id="myIframe-2" ></iframe>
+          <iframe src="assets/products-files/products.html" title="sy" scrolling="no" height="100%" width="100%" id="myIframe-2" ></iframe>
         
-        <script>
-        var iframe = document.getElementById("myIframe-2");
-        
-        iframe.onload = function(){
-            iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-        }
-        </script>
+          <script>
+            var iframe = document.getElementById("myIframe-2");
+            
+            iframe.onload = function() {
+              var extraHeight = 20; // 2cm = 20px
+              var newHeight = iframe.contentWindow.document.body.scrollHeight + extraHeight;
+              iframe.style.height = newHeight + 'px';
+            }
+          </script>
       </div> 
         
       </section>

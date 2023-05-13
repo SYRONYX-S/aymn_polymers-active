@@ -6,7 +6,7 @@
 
 body {
   background-color: #ffffff00;
-  min-height: 100vh;
+  /* min-height: 100%; */
   font-family: "Exo 2";
   display: flex;
 }
