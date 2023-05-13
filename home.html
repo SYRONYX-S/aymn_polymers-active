@@ -111,19 +111,10 @@
           <h1 class="section-heading">Products</h1>
           <h3 class="section-description">product details</h3>
         </div>
-        <div class="products-frame">
-          <iframe src="assets/products-files/products.html" title="sy" scrolling="no" height="100%" width="100%" id="myIframe-2" ></iframe>
+        <div class="products-frame" style="height: auto; max-height: 100vh;">
+          <iframe src="assets/products-files/products.html" title="sy" scrolling="no" width="100%" id="myIframe-2"></iframe>
+        </div>
         
-          <script>
-            var iframe = document.getElementById("myIframe-2");
-            
-            iframe.onload = function() {
-              var extraHeight = 20; // 2cm = 20px
-              var newHeight = iframe.contentWindow.document.body.scrollHeight + extraHeight;
-              iframe.style.height = newHeight + 'px';
-            }
-          </script>
-      </div> 
         
       </section>
       <section class="et-slide company" id="company" data-nav="company">
