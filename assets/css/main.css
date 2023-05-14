@@ -688,7 +688,7 @@
     position: relative;
     left: 0;
     padding: 20px 20px;
-    background: rgba(0, 0, 0, 0.363);
+    background: rgba(255, 255, 255, 0.349);
     /*   background:red; */
     height: auto;
     backdrop-filter: blur(10px);
@@ -697,7 +697,7 @@
     z-index: 1;
     transition: .5s;
     transform: 0.5s;
-    color: #ffffff;
+    color: #2e2e2e;
   }
   
   .company-container .box:hover .company-content {
@@ -709,9 +709,9 @@
   .company-container .box .company-content h2 {
     font-size: 2em;
     transition: .5s;
-    color: #00abe4;
+    color: #000000b2;
     text-transform: uppercase;
-    font-family: "Raleway";
+    font-family: "Exo 2";
     letter-spacing: .2rem;
     margin-bottom: 18px;
     position: relative;
@@ -723,8 +723,8 @@
     width: 120px;
     font-family: "Exo 2";
     height: 1px;
-    background: #ffffff;
-    bottom: 1px;
+    background: #fff;
+    bottom: -4px;
     left: calc(50% - 60px);
 }
 
@@ -735,8 +735,8 @@
     width: 40px;
     font-family: "Exo 2";
     height: 3px;
-    background: #257035;
-    bottom: 0;
+    background: #2571a9;
+    bottom: -5px;
     left: calc(50% - 20px);
 }
   .company-container .box .company-content p {
