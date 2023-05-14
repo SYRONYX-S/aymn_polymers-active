@@ -1098,7 +1098,7 @@ body {
 }
 .et-hero-tabs h1,
 .et-slide h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 0;
     letter-spacing: .2rem
 }
@@ -4196,6 +4196,22 @@ iframe {
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
     }
+    .about {
+        padding-top: 1cm;
+        /* padding-bottom: 5cm; */
+    }
+    .products {
+        padding-top: 5cm;
+        /* padding-bottom: 5cm; */
+    }
+    .company {
+        padding-top: 0cm;
+        /* padding-bottom: 5cm; */
+    }
+    .contact {
+        padding-top: 5cm;
+        padding-bottom: 1cm;
+    }
 }
 @media (max-width:991px) and (min-width: 700px) {
     .mobile-nav-img {
@@ -4412,7 +4428,7 @@ iframe {
         /* padding-bottom: 5cm; */
     }
     .company {
-        padding-top: 5cm;
+        padding-top: 4cm;
         /* padding-bottom: 5cm; */
     }
     .contact {
