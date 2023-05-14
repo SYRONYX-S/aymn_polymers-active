@@ -111,11 +111,17 @@
           <h1 class="section-heading">Products</h1>
           <h3 class="section-description">product details</h3>
         </div>
-        <div class="products-frame" style="height: auto; max-height: 100vh;">
+        <div class="products-frame">
           <iframe src="assets/products-files/products.html" title="sy" scrolling="no" width="100%" id="myIframe-2"></iframe>
         </div>
-        
-        
+        <script>
+          var iframe = document.getElementById("myIframe-2");
+          
+          // Adjusting the iframe height onload event
+          iframe.onload = function(){
+              iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+          }
+        </script>
       </section>
       <section class="et-slide company" id="company" data-nav="company">
         <div class="section-text">
