@@ -4468,10 +4468,10 @@ iframe {
 --------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
-  visibility: hidden;
+  /* visibility: hidden; */
   margin-left: 10px;
   margin-right: 10px;
-  opacity: 0;
+  /* opacity: 0; */
   right: 15px;
   bottom: 15px;
   z-index: 99999;
